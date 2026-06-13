@@ -9,7 +9,8 @@
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder --win --x64",
-    "dist:portable": "electron-builder --win portable --x64"
+    "dist:portable": "electron-builder --win portable --x64",
+    "dist:mac": "electron-builder --mac --x64 --arm64"
   },
   "devDependencies": {
     "electron": "^33.2.0",
@@ -29,6 +30,15 @@
       "target": [
         { "target": "nsis", "arch": ["x64"] }
       ]
+    },
+    "mac": {
+      "target": [
+        { "target": "dmg", "arch": ["x64", "arm64"] }
+      ],
+      "category": "public.app-category.business"
+    },
+    "dmg": {
+      "title": "SafeSquare ${version}"
     },
     "nsis": {
       "oneClick": false,

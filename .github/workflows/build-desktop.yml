@@ -1,4 +1,4 @@
-name: Build Windows Desktop (.exe)
+name: Build Desktop (.exe + .dmg)
 
 on:
   push:
@@ -7,10 +7,24 @@ on:
   workflow_dispatch: {}    # 수동 실행도 가능
 
 jobs:
-  build-windows:
-    runs-on: windows-latest
+  build:
     permissions:
       contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: windows
+            script: dist
+            artifact: SafeSquare-Windows-Installer
+            glob: desktop/release/*.exe
+          - os: macos-latest
+            name: macos
+            script: dist:mac
+            artifact: SafeSquare-macOS-dmg
+            glob: desktop/release/*.dmg
+    runs-on: ${{ matrix.os }}
     defaults:
       run:
         working-directory: desktop
@@ -26,21 +40,23 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Windows installer
-        run: npm run dist
+      - name: Build (${{ matrix.name }})
+        run: npm run ${{ matrix.script }}
+        env:
+          # 코드서명 없이 빌드 (서명 인증서가 없을 때 mac 빌드 실패 방지)
+          CSC_IDENTITY_AUTO_DISCOVERY: false
 
       - name: Upload artifact (always)
         uses: actions/upload-artifact@v4
         with:
-          name: SafeSquare-Windows-Installer
-          path: |
-            desktop/release/*.exe
+          name: ${{ matrix.artifact }}
+          path: ${{ matrix.glob }}
           if-no-files-found: error
 
-      - name: Create GitHub Release (on tag)
+      - name: Create / update GitHub Release (on tag)
         if: startsWith(github.ref, 'refs/tags/desktop-v')
         uses: softprops/action-gh-release@v2
         with:
-          files: desktop/release/*.exe
+          files: ${{ matrix.glob }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
