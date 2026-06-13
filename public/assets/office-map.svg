@@ -1,0 +1,602 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" preserveAspectRatio="none">
+  <defs>
+    <pattern id="grid" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="rgba(0,0,0,0.028)" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="dots" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="rgba(0,0,0,0.07)"/>
+    </pattern>
+    <radialGradient id="cmdGrad" cx="50%" cy="60%" r="60%">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#f3f0ff"/>
+    </radialGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(109,40,217,0.06)"/>
+      <stop offset="100%" stop-color="rgba(109,40,217,0)"/>
+    </radialGradient>
+    <linearGradient id="wallEdgeTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.14)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </linearGradient>
+    <linearGradient id="wallEdgeBot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.12)"/>
+    </linearGradient>
+    <linearGradient id="wallEdgeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.12)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </linearGradient>
+    <linearGradient id="wallEdgeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.12)"/>
+    </linearGradient>
+    <linearGradient id="consoleBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="50%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5b87a"/>
+      <stop offset="100%" stop-color="#c99050"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══════════════ WALL BACKGROUND ══════════════════════════════ -->
+  <rect width="900" height="580" fill="#c4a870"/>
+
+  <!-- ══════════════ CORRIDORS ══════════════════════════════════════ -->
+  <rect x="249" y="0" width="24" height="580" fill="#d2bc90"/>
+  <rect x="249" y="0" width="24" height="580" fill="url(#dots)"/>
+  <rect x="551" y="0" width="24" height="580" fill="#d2bc90"/>
+  <rect x="551" y="0" width="24" height="580" fill="url(#dots)"/>
+  <rect x="0" y="192" width="900" height="22" fill="#d2bc90"/>
+  <rect x="0" y="192" width="900" height="22" fill="url(#dots)"/>
+  <rect x="0" y="394" width="900" height="22" fill="#d2bc90"/>
+  <rect x="0" y="394" width="900" height="22" fill="url(#dots)"/>
+
+  <!-- ══════════════ CEO OFFICE ══════════════════════════════════════ -->
+  <rect x="11" y="12" width="238" height="180" fill="#fef6e8" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="12" y="34" width="236" height="157" fill="url(#grid)"/>
+  <!-- Band -->
+  <rect x="11" y="12" width="238" height="22" fill="#7c4d1e" rx="3"/>
+  <rect x="11" y="24" width="238" height="10" fill="#7c4d1e"/>
+  <text x="22" y="27" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">👑 CEO OFFICE</text>
+  <circle cx="238" cy="23" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Bookshelf left wall -->
+  <rect x="14" y="35" width="13" height="90" fill="#c49a6c" rx="1"/>
+  <rect x="14" y="56" width="13" height="1" fill="#96693a" opacity="0.6"/>
+  <rect x="14" y="77" width="13" height="1" fill="#96693a" opacity="0.6"/>
+  <rect x="14" y="98" width="13" height="1" fill="#96693a" opacity="0.6"/>
+  <rect x="15" y="58" width="5" height="17" fill="#3b82f6" rx="0.5" opacity="0.6"/>
+  <rect x="21" y="60" width="4" height="15" fill="#ef4444" rx="0.5" opacity="0.5"/>
+  <rect x="15" y="79" width="4" height="17" fill="#22c55e" rx="0.5" opacity="0.55"/>
+  <rect x="20" y="81" width="5" height="15" fill="#f59e0b" rx="0.5" opacity="0.6"/>
+  <!-- Wall art -->
+  <rect x="32" y="35" width="34" height="22" fill="#dbeafe" rx="1.5" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="35" y="38" width="28" height="16" fill="#60a5fa" rx="1" opacity="0.45"/>
+  <rect x="72" y="35" width="26" height="22" fill="#fef3c7" rx="1.5" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="75" y="38" width="20" height="16" fill="#f59e0b" rx="1" opacity="0.45"/>
+  <rect x="103" y="35" width="22" height="22" fill="#fce7f3" rx="1.5" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="106" y="38" width="16" height="16" fill="#ec4899" rx="1" opacity="0.45"/>
+  <!-- Executive desk -->
+  <rect x="76" y="122" width="84" height="30" fill="url(#deskGrad)" rx="2" stroke="#b8875a" stroke-width="1"/>
+  <rect x="76" y="122" width="84" height="7" fill="rgba(255,255,255,0.14)" rx="2"/>
+  <!-- Lamp -->
+  <line x1="88" y1="122" x2="88" y2="115" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="88" cy="112" r="5" fill="#fbbf24" opacity="0.75"/>
+  <!-- Laptop -->
+  <rect x="110" y="126" width="18" height="13" fill="#1e293b" rx="1"/>
+  <rect x="111" y="127" width="16" height="10" fill="#3b82f6" opacity="0.45" rx="0.5"/>
+  <!-- Papers -->
+  <rect x="149" y="127" width="10" height="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5" transform="rotate(-3 154 131)"/>
+  <!-- Coffee cup -->
+  <rect x="167" y="127" width="8" height="7" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.8" rx="1"/>
+  <rect x="168" y="124" width="6" height="3" fill="#d1fae5" rx="0.5" opacity="0.6"/>
+  <!-- CEO chair -->
+  <ellipse cx="127" cy="108" rx="10" ry="9" fill="#4c1d95"/>
+  <ellipse cx="127" cy="107" rx="6" ry="5" fill="#7c3aed" opacity="0.45"/>
+  <!-- Guest chairs -->
+  <ellipse cx="92" cy="161" rx="9" ry="8" fill="#78716c"/>
+  <ellipse cx="91" cy="160" rx="5" ry="4" fill="#a8a29e" opacity="0.35"/>
+  <ellipse cx="163" cy="161" rx="9" ry="8" fill="#78716c"/>
+  <ellipse cx="162" cy="160" rx="5" ry="4" fill="#a8a29e" opacity="0.35"/>
+  <!-- Plant top-right -->
+  <rect x="229" y="48" width="10" height="6" fill="#92400e" rx="1"/>
+  <ellipse cx="234" cy="44" rx="11" ry="10" fill="#4ade80" opacity="0.8"/>
+  <ellipse cx="234" cy="46" rx="7" ry="6" fill="#22c55e" opacity="0.55"/>
+  <!-- Plants bottom -->
+  <rect x="22" y="183" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="27" cy="181" rx="8" ry="7" fill="#86efac" opacity="0.82"/>
+  <rect x="204" y="183" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="209" cy="181" rx="8" ry="7" fill="#86efac" opacity="0.82"/>
+
+  <!-- ══════════════ MEETING ROOM ════════════════════════════════════ -->
+  <rect x="273" y="12" width="278" height="180" fill="#edf8f3" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="274" y="34" width="276" height="157" fill="url(#grid)"/>
+  <rect x="273" y="12" width="278" height="22" fill="#0c6b47" rx="3"/>
+  <rect x="273" y="24" width="278" height="10" fill="#0c6b47"/>
+  <text x="284" y="27" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">🗣️ MEETING ROOM</text>
+  <circle cx="539" cy="23" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Presentation screen -->
+  <rect x="363" y="36" width="100" height="46" fill="#f0fdf4" rx="3" stroke="#6ee7b7" stroke-width="2"/>
+  <text x="371" y="48" font-size="7" fill="#065f46" font-weight="900" font-family="system-ui">Q2 ROADMAP</text>
+  <rect x="369" y="52" width="11" height="22" fill="#3b82f6" rx="1" opacity="0.65"/>
+  <rect x="382" y="47" width="11" height="27" fill="#10b981" rx="1" opacity="0.65"/>
+  <rect x="395" y="50" width="11" height="24" fill="#f59e0b" rx="1" opacity="0.6"/>
+  <rect x="408" y="44" width="11" height="30" fill="#8b5cf6" rx="1" opacity="0.6"/>
+  <rect x="421" y="46" width="11" height="28" fill="#06b6d4" rx="1" opacity="0.55"/>
+  <rect x="434" y="42" width="11" height="32" fill="#ec4899" rx="1" opacity="0.55"/>
+  <line x1="369" y1="74" x2="447" y2="74" stroke="#a7f3d0" stroke-width="0.7"/>
+  <!-- Oval meeting table -->
+  <ellipse cx="412" cy="118" rx="82" ry="42" fill="url(#deskGrad)" stroke="#b8875a" stroke-width="1.5"/>
+  <ellipse cx="412" cy="117" rx="78" ry="38" fill="rgba(255,255,255,0.12)"/>
+  <!-- Chairs around table -->
+  <ellipse cx="378" cy="84" rx="9" ry="8" fill="#334155"/>
+  <ellipse cx="377" cy="83" rx="5" ry="4" fill="#475569" opacity="0.4"/>
+  <ellipse cx="447" cy="84" rx="9" ry="8" fill="#334155"/>
+  <ellipse cx="446" cy="83" rx="5" ry="4" fill="#475569" opacity="0.4"/>
+  <ellipse cx="338" cy="118" rx="8" ry="9" fill="#334155"/>
+  <ellipse cx="488" cy="118" rx="8" ry="9" fill="#334155"/>
+  <ellipse cx="378" cy="152" rx="9" ry="8" fill="#334155"/>
+  <ellipse cx="447" cy="152" rx="9" ry="8" fill="#334155"/>
+  <!-- Table items -->
+  <rect x="398" y="106" width="16" height="11" fill="#1e293b" rx="1"/>
+  <rect x="399" y="107" width="14" height="8" fill="#3b82f6" opacity="0.35" rx="0.5"/>
+  <rect x="420" y="106" width="16" height="11" fill="#1e293b" rx="1"/>
+  <rect x="421" y="107" width="14" height="8" fill="#10b981" opacity="0.35" rx="0.5"/>
+  <rect x="403" y="119" width="16" height="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <circle cx="347" cy="110" r="4" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.8"/>
+  <circle cx="479" cy="110" r="4" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.8"/>
+  <!-- Plants -->
+  <rect x="282" y="183" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="287" cy="181" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="531" y="181" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="536" cy="179" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+  <rect x="282" y="43" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="287" cy="41" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+
+  <!-- ══════════════ DEVELOPMENT ROOM ════════════════════════════════ -->
+  <rect x="575" y="12" width="314" height="180" fill="#f0f4fa" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="576" y="34" width="312" height="157" fill="url(#grid)"/>
+  <rect x="575" y="12" width="314" height="22" fill="#1d3a6e" rx="3"/>
+  <rect x="575" y="24" width="314" height="10" fill="#1d3a6e"/>
+  <text x="586" y="27" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">💻 DEVELOPMENT</text>
+  <circle cx="877" cy="23" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Whiteboard -->
+  <rect x="578" y="35" width="76" height="38" fill="#f8fafc" rx="2" stroke="#93c5fd" stroke-width="1.5"/>
+  <rect x="580" y="37" width="72" height="6" fill="#1d3a6e" opacity="0.07" rx="1"/>
+  <text x="584" y="47" font-size="6.5" fill="#1d3a6e" font-weight="800" font-family="monospace">git push origin</text>
+  <line x1="584" y1="54" x2="646" y2="54" stroke="#3b82f6" stroke-width="0.8" opacity="0.45"/>
+  <text x="584" y="63" font-size="5.5" fill="#60a5fa" font-family="monospace" font-weight="700">v2.4.0 ✓ deployed</text>
+  <!-- Server racks right wall -->
+  <rect x="861" y="35" width="17" height="30" fill="#1e293b" rx="1.5"/>
+  <rect x="863" y="38" width="13" height="2" fill="#10b981" rx="0.5" opacity="0.8"/>
+  <rect x="863" y="42" width="13" height="2" fill="#10b981" rx="0.5" opacity="0.55"/>
+  <rect x="863" y="46" width="13" height="2" fill="#3b82f6" rx="0.5" opacity="0.7"/>
+  <rect x="863" y="50" width="13" height="2" fill="#f59e0b" rx="0.5" opacity="0.55"/>
+  <rect x="863" y="54" width="13" height="2" fill="#ef4444" rx="0.5" opacity="0.45"/>
+  <rect x="861" y="69" width="17" height="30" fill="#1e293b" rx="1.5"/>
+  <rect x="863" y="72" width="13" height="2" fill="#10b981" rx="0.5" opacity="0.75"/>
+  <rect x="863" y="76" width="13" height="2" fill="#ef4444" rx="0.5" opacity="0.5"/>
+  <rect x="863" y="80" width="13" height="2" fill="#10b981" rx="0.5" opacity="0.55"/>
+  <rect x="863" y="84" width="13" height="2" fill="#3b82f6" rx="0.5" opacity="0.45"/>
+  <rect x="861" y="103" width="17" height="30" fill="#1e293b" rx="1.5"/>
+  <rect x="863" y="106" width="13" height="2" fill="#10b981" rx="0.5" opacity="0.8"/>
+  <rect x="863" y="110" width="13" height="2" fill="#10b981" rx="0.5" opacity="0.7"/>
+  <rect x="863" y="114" width="13" height="2" fill="#3b82f6" rx="0.5" opacity="0.55"/>
+  <!-- Desk row 1 -->
+  <rect x="666" y="46" width="74" height="24" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="669" y="31" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="670" y="32" width="14" height="9" fill="#3b82f6" opacity="0.45" rx="0.5"/>
+  <rect x="706" y="31" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="707" y="32" width="14" height="9" fill="#10b981" opacity="0.4" rx="0.5"/>
+  <ellipse cx="718" cy="76" rx="9" ry="8" fill="#1d3a6e"/>
+  <rect x="693" y="49" width="16" height="11" fill="#1e293b" rx="1" opacity="0.9"/>
+  <rect x="694" y="50" width="14" height="8" fill="#22c55e" opacity="0.35" rx="0.5"/>
+  <circle cx="731" cy="51" r="3.5" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <!-- Desk row 2 -->
+  <rect x="776" y="46" width="70" height="24" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="779" y="31" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="780" y="32" width="14" height="9" fill="#3b82f6" opacity="0.45" rx="0.5"/>
+  <rect x="812" y="31" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="813" y="32" width="14" height="9" fill="#8b5cf6" opacity="0.35" rx="0.5"/>
+  <ellipse cx="824" cy="76" rx="9" ry="8" fill="#1d3a6e"/>
+  <!-- Desk row 3 -->
+  <rect x="652" y="119" width="72" height="23" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="655" y="105" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="656" y="106" width="14" height="9" fill="#f59e0b" opacity="0.4" rx="0.5"/>
+  <ellipse cx="684" cy="148" rx="9" ry="8" fill="#1d3a6e"/>
+  <rect x="706" y="122" width="12" height="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Desk row 4 -->
+  <rect x="762" y="119" width="70" height="23" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="765" y="105" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="766" y="106" width="14" height="9" fill="#3b82f6" opacity="0.4" rx="0.5"/>
+  <ellipse cx="794" cy="148" rx="9" ry="8" fill="#1d3a6e"/>
+  <!-- Plants -->
+  <rect x="585" y="44" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="590" cy="42" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+  <rect x="592" y="183" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="597" cy="181" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="712" y="182" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="717" cy="180" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+
+  <!-- ══════════════ MARKETING ════════════════════════════════════════ -->
+  <rect x="11" y="214" width="238" height="180" fill="#fdf2ff" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="12" y="236" width="236" height="157" fill="url(#grid)"/>
+  <rect x="11" y="214" width="238" height="22" fill="#5b1d95" rx="3"/>
+  <rect x="11" y="226" width="238" height="10" fill="#5b1d95"/>
+  <text x="22" y="229" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">📣 MARKETING</text>
+  <circle cx="237" cy="225" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Campaign board -->
+  <rect x="14" y="237" width="32" height="44" fill="#faf5ff" rx="2" stroke="#e9d5ff" stroke-width="1.5"/>
+  <rect x="17" y="241" width="26" height="3" fill="#8b5cf6" rx="0.5" opacity="0.5"/>
+  <rect x="17" y="247" width="20" height="2" fill="#a78bfa" rx="0.5" opacity="0.4"/>
+  <rect x="17" y="252" width="22" height="2" fill="#c4b5fd" rx="0.5" opacity="0.4"/>
+  <rect x="17" y="259" width="8" height="8" fill="#fde68a" rx="1" transform="rotate(-2 21 263)"/>
+  <rect x="28" y="257" width="8" height="8" fill="#bbf7d0" rx="1" transform="rotate(3 32 261)"/>
+  <rect x="17" y="270" width="8" height="8" fill="#fecaca" rx="1" transform="rotate(-1 21 274)"/>
+  <rect x="28" y="270" width="8" height="8" fill="#bfdbfe" rx="1" transform="rotate(2 32 274)"/>
+  <!-- Analytics panel -->
+  <rect x="195" y="237" width="50" height="48" fill="#fff" rx="2.5" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="200" y="249" font-size="6.5" fill="#5b1d95" font-weight="900" font-family="system-ui">ROI ↑</text>
+  <polyline points="201,278 207,271 215,265 223,268 231,257 239,250 245,245" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="245" cy="245" r="2.5" fill="#8b5cf6"/>
+  <!-- Desk 1 -->
+  <rect x="50" y="298" width="62" height="24" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="52" y="284" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="53" y="285" width="14" height="9" fill="#8b5cf6" opacity="0.4" rx="0.5"/>
+  <ellipse cx="74" cy="327" rx="9" ry="8" fill="#5b1d95"/>
+  <rect x="88" y="301" width="16" height="11" fill="#1e293b" rx="1"/>
+  <rect x="89" y="302" width="14" height="8" fill="#a78bfa" opacity="0.3" rx="0.5"/>
+  <!-- Desk 2 -->
+  <rect x="142" y="298" width="62" height="24" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="144" y="284" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="145" y="285" width="14" height="9" fill="#f59e0b" opacity="0.3" rx="0.5"/>
+  <ellipse cx="166" cy="327" rx="9" ry="8" fill="#5b1d95"/>
+  <circle cx="195" cy="301" r="3.5" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <rect x="181" y="301" width="10" height="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Sticky notes right wall -->
+  <rect x="195" y="298" width="12" height="12" fill="#fde68a" rx="1" transform="rotate(-2 201 304)"/>
+  <rect x="195" y="314" width="12" height="12" fill="#bbf7d0" rx="1" transform="rotate(3 201 320)"/>
+  <rect x="209" y="298" width="12" height="12" fill="#fecaca" rx="1" transform="rotate(-1 215 304)"/>
+  <rect x="209" y="314" width="12" height="12" fill="#bfdbfe" rx="1" transform="rotate(2 215 320)"/>
+  <rect x="209" y="330" width="12" height="12" fill="#f0abfc" rx="1" transform="rotate(-3 215 336)"/>
+  <!-- Plants -->
+  <rect x="22" y="381" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="27" cy="379" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="229" y="384" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="234" cy="382" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+  <rect x="17" y="244" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="22" cy="242" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+
+  <!-- ══════════════ FINANCE ══════════════════════════════════════════ -->
+  <rect x="273" y="214" width="278" height="180" fill="#edfcfe" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="274" y="236" width="276" height="157" fill="url(#grid)"/>
+  <rect x="273" y="214" width="278" height="22" fill="#0a6b82" rx="3"/>
+  <rect x="273" y="226" width="278" height="10" fill="#0a6b82"/>
+  <text x="284" y="229" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">💰 FINANCE</text>
+  <circle cx="539" cy="225" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Filing cabinet -->
+  <rect x="277" y="237" width="16" height="30" fill="#94a3b8" rx="1" stroke="#64748b" stroke-width="0.8"/>
+  <rect x="278" y="240" width="14" height="11" fill="#cbd5e1" rx="0.5"/>
+  <rect x="278" y="254" width="14" height="10" fill="#cbd5e1" rx="0.5"/>
+  <circle cx="285" cy="246" r="1.5" fill="#64748b"/>
+  <circle cx="285" cy="259" r="1.5" fill="#64748b"/>
+  <!-- Safe -->
+  <rect x="278" y="271" width="14" height="14" fill="#374151" rx="1"/>
+  <circle cx="285" cy="278" r="4" fill="#6b7280" stroke="#374151" stroke-width="1"/>
+  <circle cx="285" cy="278" r="2" fill="#374151"/>
+  <!-- Revenue chart -->
+  <rect x="300" y="236" width="70" height="52" fill="#fff" rx="2.5" stroke="#a5f3fc" stroke-width="1"/>
+  <text x="305" y="247" font-size="6.5" fill="#0a6b82" font-weight="900" font-family="system-ui">Revenue Q2</text>
+  <rect x="306" y="252" width="9" height="24" fill="#06b6d4" rx="0.5" opacity="0.5"/>
+  <rect x="317" y="244" width="9" height="32" fill="#06b6d4" rx="0.5" opacity="0.55"/>
+  <rect x="328" y="248" width="9" height="28" fill="#06b6d4" rx="0.5" opacity="0.6"/>
+  <rect x="339" y="240" width="9" height="36" fill="#06b6d4" rx="0.5" opacity="0.65"/>
+  <rect x="350" y="237" width="9" height="39" fill="#06b6d4" rx="0.5" opacity="0.7"/>
+  <line x1="306" y1="278" x2="362" y2="278" stroke="#a5f3fc" stroke-width="0.6"/>
+  <text x="306" y="284" font-size="5.5" fill="#0e7490" font-weight="800" font-family="system-ui">↑ 14% MoM</text>
+  <!-- Main desk -->
+  <rect x="336" y="312" width="94" height="30" fill="url(#deskGrad)" rx="2" stroke="#b8875a" stroke-width="1"/>
+  <rect x="339" y="298" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="340" y="299" width="14" height="9" fill="#06b6d4" opacity="0.4" rx="0.5"/>
+  <rect x="380" y="298" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="381" y="299" width="14" height="9" fill="#22c55e" opacity="0.3" rx="0.5"/>
+  <ellipse cx="378" cy="348" rx="9" ry="8" fill="#0a6b82"/>
+  <rect x="414" y="315" width="12" height="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <circle cx="432" cy="316" r="4" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <!-- Secondary desk -->
+  <rect x="454" y="310" width="60" height="26" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <rect x="456" y="296" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="457" y="297" width="14" height="9" fill="#06b6d4" opacity="0.35" rx="0.5"/>
+  <ellipse cx="476" cy="342" rx="8" ry="8" fill="#0a6b82"/>
+  <!-- Plants -->
+  <rect x="286" y="384" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="291" cy="382" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+  <rect x="524" y="381" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="529" cy="379" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+
+  <!-- ══════════════ LOUNGE ══════════════════════════════════════════ -->
+  <rect x="575" y="214" width="314" height="180" fill="#edfef5" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="576" y="236" width="312" height="157" fill="url(#grid)"/>
+  <rect x="575" y="214" width="314" height="22" fill="#145232" rx="3"/>
+  <rect x="575" y="226" width="314" height="10" fill="#145232"/>
+  <text x="586" y="229" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">☕ LOUNGE</text>
+  <circle cx="877" cy="225" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Rug (ellipse) -->
+  <ellipse cx="730" cy="318" rx="82" ry="52" fill="#fde68a" opacity="0.45"/>
+  <!-- Top sofa -->
+  <rect x="644" y="250" width="124" height="24" fill="#86efac" rx="8" stroke="#4ade80" stroke-width="1"/>
+  <rect x="650" y="250" width="14" height="24" fill="#4ade80" opacity="0.35" rx="6"/>
+  <rect x="754" y="250" width="14" height="24" fill="#4ade80" opacity="0.35" rx="6"/>
+  <rect x="660" y="254" width="92" height="8" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <!-- Left sofa (vertical) -->
+  <rect x="590" y="286" width="22" height="80" fill="#86efac" rx="8" stroke="#4ade80" stroke-width="1"/>
+  <rect x="590" y="286" width="22" height="14" fill="#4ade80" opacity="0.35" rx="6"/>
+  <rect x="590" y="352" width="22" height="14" fill="#4ade80" opacity="0.35" rx="6"/>
+  <!-- Right sofa (vertical) -->
+  <rect x="808" y="286" width="22" height="80" fill="#86efac" rx="8" stroke="#4ade80" stroke-width="1"/>
+  <rect x="808" y="286" width="22" height="14" fill="#4ade80" opacity="0.35" rx="6"/>
+  <rect x="808" y="352" width="22" height="14" fill="#4ade80" opacity="0.35" rx="6"/>
+  <!-- Round coffee table -->
+  <circle cx="730" cy="317" r="30" fill="url(#deskGrad)" stroke="#b8875a" stroke-width="1.5"/>
+  <circle cx="730" cy="317" r="26" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="720" cy="313" r="4" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <circle cx="738" cy="311" r="4" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <circle cx="729" cy="327" r="4" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <!-- Vending machines -->
+  <rect x="840" y="237" width="18" height="34" fill="#e2e8f0" rx="2.5" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="842" y="240" width="14" height="22" fill="#dbeafe" rx="1.5"/>
+  <rect x="843" y="246" width="12" height="2" fill="#3b82f6" rx="0.5" opacity="0.5"/>
+  <rect x="843" y="250" width="12" height="2" fill="#60a5fa" rx="0.5" opacity="0.4"/>
+  <rect x="842" y="265" width="14" height="5" fill="#64748b" rx="1"/>
+  <rect x="860" y="237" width="18" height="34" fill="#e2e8f0" rx="2.5" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="862" y="240" width="14" height="22" fill="#d1fae5" rx="1.5"/>
+  <rect x="863" y="246" width="12" height="2" fill="#10b981" rx="0.5" opacity="0.5"/>
+  <rect x="863" y="250" width="12" height="2" fill="#34d399" rx="0.5" opacity="0.4"/>
+  <rect x="862" y="265" width="14" height="5" fill="#64748b" rx="1"/>
+  <!-- Plants -->
+  <rect x="582" y="251" width="10" height="6" fill="#92400e" rx="1"/>
+  <ellipse cx="588" cy="247" rx="13" ry="12" fill="#4ade80" opacity="0.82"/>
+  <ellipse cx="588" cy="250" rx="8" ry="7" fill="#22c55e" opacity="0.5"/>
+  <rect x="612" y="251" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="617" cy="248" rx="10" ry="9" fill="#86efac" opacity="0.82"/>
+  <rect x="596" y="388" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="601" cy="386" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="731" y="387" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="736" cy="385" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+  <rect x="874" y="383" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="879" cy="381" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="751" y="243" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="756" cy="241" rx="8" ry="7" fill="#86efac" opacity="0.75"/>
+
+  <!-- ══════════════ SUPPORT ══════════════════════════════════════════ -->
+  <rect x="11" y="416" width="238" height="152" fill="#eff6ff" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="12" y="438" width="236" height="129" fill="url(#grid)"/>
+  <rect x="11" y="416" width="238" height="22" fill="#1a3ea0" rx="3"/>
+  <rect x="11" y="428" width="238" height="10" fill="#1a3ea0"/>
+  <text x="22" y="431" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">🎧 SUPPORT AI DESK</text>
+  <circle cx="237" cy="427" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Glass partition -->
+  <rect x="22" y="468" width="212" height="10" fill="#93c5fd" opacity="0.28" rx="1" stroke="#93c5fd" stroke-width="0.8"/>
+  <!-- Support desk -->
+  <rect x="30" y="492" width="180" height="28" fill="url(#deskGrad)" rx="2" stroke="#b8875a" stroke-width="1"/>
+  <rect x="35" y="478" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="36" y="479" width="14" height="9" fill="#3b82f6" opacity="0.4" rx="0.5"/>
+  <rect x="114" y="478" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="115" y="479" width="14" height="9" fill="#06b6d4" opacity="0.35" rx="0.5"/>
+  <ellipse cx="62" cy="526" rx="9" ry="8" fill="#1a3ea0"/>
+  <ellipse cx="140" cy="526" rx="9" ry="8" fill="#1a3ea0"/>
+  <rect x="74" y="495" width="16" height="11" fill="#1e293b" rx="1" opacity="0.9"/>
+  <rect x="75" y="496" width="14" height="8" fill="#06b6d4" opacity="0.3" rx="0.5"/>
+  <rect x="153" y="496" width="12" height="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <circle cx="193" cy="497" r="3.5" fill="#f8fafc" stroke="#d1d5db" stroke-width="0.7"/>
+  <!-- Chat status badge -->
+  <rect x="202" y="473" width="34" height="28" fill="#dbeafe" rx="3" stroke="#93c5fd" stroke-width="1"/>
+  <text x="213" y="492" font-size="14">💬</text>
+  <!-- Plants -->
+  <rect x="20" y="554" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="25" cy="552" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="228" y="443" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="233" cy="441" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+
+  <!-- ══════════════ HR DESK ══════════════════════════════════════════ -->
+  <rect x="273" y="416" width="278" height="152" fill="#f8f0ff" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="274" y="438" width="276" height="129" fill="url(#grid)"/>
+  <rect x="273" y="416" width="278" height="22" fill="#4c1d95" rx="3"/>
+  <rect x="273" y="428" width="278" height="10" fill="#4c1d95"/>
+  <text x="284" y="431" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">🤝 HR AI DESK</text>
+  <circle cx="539" cy="427" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Hiring pipeline board -->
+  <rect x="330" y="440" width="180" height="44" fill="#fff" rx="2.5" stroke="#e9d5ff" stroke-width="1.5"/>
+  <rect x="334" y="444" width="54" height="36" fill="#fef3c7" rx="2"/>
+  <text x="341" y="455" font-size="7" fill="#92400e" font-family="system-ui" font-weight="700">📥 Applied</text>
+  <text x="354" y="470" font-size="10" fill="#374151" font-weight="900" font-family="system-ui">8</text>
+  <rect x="392" y="444" width="56" height="36" fill="#dbeafe" rx="2"/>
+  <text x="397" y="455" font-size="7" fill="#1e40af" font-family="system-ui" font-weight="700">🔍 Review</text>
+  <text x="412" y="470" font-size="10" fill="#374151" font-weight="900" font-family="system-ui">5</text>
+  <rect x="452" y="444" width="54" height="36" fill="#d1fae5" rx="2"/>
+  <text x="460" y="455" font-size="7" fill="#065f46" font-family="system-ui" font-weight="700">✅ Offer</text>
+  <text x="473" y="470" font-size="10" fill="#374151" font-weight="900" font-family="system-ui">2</text>
+  <!-- Filing cabinets left wall -->
+  <rect x="278" y="440" width="16" height="28" fill="#94a3b8" rx="1" stroke="#64748b" stroke-width="0.8"/>
+  <rect x="279" y="443" width="14" height="11" fill="#cbd5e1" rx="0.5"/>
+  <rect x="279" y="457" width="14" height="9" fill="#cbd5e1" rx="0.5"/>
+  <circle cx="286" cy="449" r="1.5" fill="#64748b"/>
+  <rect x="278" y="472" width="16" height="28" fill="#94a3b8" rx="1" stroke="#64748b" stroke-width="0.8"/>
+  <rect x="279" y="475" width="14" height="11" fill="#cbd5e1" rx="0.5"/>
+  <rect x="279" y="489" width="14" height="9" fill="#cbd5e1" rx="0.5"/>
+  <!-- Main desk -->
+  <rect x="330" y="506" width="148" height="28" fill="url(#deskGrad)" rx="2" stroke="#b8875a" stroke-width="1"/>
+  <rect x="334" y="492" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="335" y="493" width="14" height="9" fill="#8b5cf6" opacity="0.4" rx="0.5"/>
+  <ellipse cx="394" cy="540" rx="9" ry="8" fill="#4c1d95"/>
+  <rect x="386" y="509" width="16" height="11" fill="#1e293b" rx="1"/>
+  <rect x="387" y="510" width="14" height="8" fill="#a78bfa" opacity="0.3" rx="0.5"/>
+  <rect x="432" y="509" width="12" height="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Profile cards right wall -->
+  <rect x="510" y="444" width="18" height="22" fill="#f3e8ff" rx="1.5" stroke="#e9d5ff" stroke-width="0.8"/>
+  <text x="515" y="460" font-size="10">👤</text>
+  <rect x="530" y="444" width="18" height="22" fill="#f3e8ff" rx="1.5" stroke="#e9d5ff" stroke-width="0.8"/>
+  <text x="535" y="460" font-size="10">👤</text>
+  <rect x="510" y="470" width="18" height="22" fill="#f3e8ff" rx="1.5" stroke="#e9d5ff" stroke-width="0.8"/>
+  <text x="515" y="486" font-size="10">👤</text>
+  <rect x="530" y="470" width="18" height="22" fill="#f3e8ff" rx="1.5" stroke="#e9d5ff" stroke-width="0.8"/>
+  <text x="535" y="486" font-size="10">👤</text>
+  <!-- Plants -->
+  <rect x="284" y="554" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="289" cy="552" rx="10" ry="9" fill="#4ade80" opacity="0.8"/>
+  <rect x="532" y="553" width="9" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="537" cy="551" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+
+  <!-- ══════════════ COMMAND CENTER ══════════════════════════════════ -->
+  <rect x="575" y="416" width="314" height="152" fill="url(#cmdGrad)" rx="3" stroke="rgba(80,55,15,0.4)" stroke-width="1.5"/>
+  <rect x="576" y="438" width="312" height="129" fill="url(#grid)" opacity="0.4"/>
+  <!-- Inner glow -->
+  <ellipse cx="732" cy="492" rx="130" ry="68" fill="url(#centerGlow)"/>
+  <rect x="575" y="416" width="314" height="22" fill="#2e1065" rx="3"/>
+  <rect x="575" y="428" width="314" height="10" fill="#2e1065"/>
+  <text x="586" y="431" font-size="9" fill="rgba(255,255,255,0.92)" font-weight="900" font-family="system-ui,sans-serif" letter-spacing="1.2">🧭 COMMAND CENTER</text>
+  <circle cx="877" cy="427" r="3" fill="rgba(255,255,255,0.4)"/>
+  <!-- Monitor row -->
+  <rect x="600" y="438" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="601" y="439" width="14" height="9" fill="#f59e0b" opacity="0.5" rx="0.5"/>
+  <rect x="644" y="438" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="645" y="439" width="14" height="9" fill="#10b981" opacity="0.45" rx="0.5"/>
+  <rect x="700" y="438" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="701" y="439" width="14" height="9" fill="#8b5cf6" opacity="0.5" rx="0.5"/>
+  <rect x="752" y="438" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="753" y="439" width="14" height="9" fill="#3b82f6" opacity="0.45" rx="0.5"/>
+  <rect x="808" y="438" width="16" height="12" fill="#1e293b" rx="1"/>
+  <rect x="809" y="439" width="14" height="9" fill="#10b981" opacity="0.4" rx="0.5"/>
+  <!-- Command console -->
+  <rect x="597" y="470" width="270" height="46" fill="url(#consoleBg)" rx="10" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="597" y="470" width="270" height="10" fill="rgba(255,255,255,0.07)" rx="10"/>
+  <!-- Console - eye icon -->
+  <circle cx="622" cy="493" r="12" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.32)" stroke-width="1.2"/>
+  <text x="617" y="498" font-size="10">👁️</text>
+  <!-- Console action tiles -->
+  <rect x="643" y="482" width="18" height="18" fill="rgba(255,255,255,0.1)" rx="3" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+  <text x="647" y="495" font-size="8">📊</text>
+  <rect x="665" y="482" width="18" height="18" fill="rgba(255,255,255,0.1)" rx="3" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+  <text x="669" y="495" font-size="8">⚡</text>
+  <rect x="687" y="482" width="18" height="18" fill="rgba(255,255,255,0.1)" rx="3" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+  <text x="691" y="495" font-size="8">🎯</text>
+  <rect x="709" y="482" width="18" height="18" fill="rgba(255,255,255,0.1)" rx="3" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+  <text x="713" y="495" font-size="8">📡</text>
+  <!-- Operator desks -->
+  <rect x="582" y="522" width="84" height="24" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <ellipse cx="626" cy="551" rx="9" ry="8" fill="#4c1d95"/>
+  <rect x="588" y="525" width="16" height="11" fill="#1e293b" rx="1"/>
+  <rect x="589" y="526" width="14" height="8" fill="#8b5cf6" opacity="0.3" rx="0.5"/>
+  <rect x="800" y="522" width="84" height="24" fill="url(#deskGrad)" rx="1.5" stroke="#b8875a" stroke-width="0.8"/>
+  <ellipse cx="844" cy="551" rx="9" ry="8" fill="#4c1d95"/>
+  <rect x="816" y="525" width="16" height="11" fill="#1e293b" rx="1"/>
+  <rect x="817" y="526" width="14" height="8" fill="#8b5cf6" opacity="0.3" rx="0.5"/>
+  <!-- Status lights -->
+  <circle cx="668" cy="558" r="4" fill="#10b981"/>
+  <rect x="675" y="557" width="18" height="2" fill="#d1fae5" rx="1"/>
+  <circle cx="703" cy="558" r="4" fill="#10b981"/>
+  <rect x="710" y="557" width="18" height="2" fill="#d1fae5" rx="1"/>
+  <circle cx="739" cy="558" r="4" fill="#f59e0b"/>
+  <rect x="746" y="557" width="18" height="2" fill="#fef3c7" rx="1"/>
+  <circle cx="775" cy="558" r="4" fill="#10b981"/>
+  <rect x="782" y="557" width="18" height="2" fill="#d1fae5" rx="1"/>
+  <!-- Corner plants -->
+  <rect x="583" y="557" width="8" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="588" cy="555" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+  <rect x="876" y="557" width="8" height="5" fill="#92400e" rx="1"/>
+  <ellipse cx="880" cy="555" rx="8" ry="7" fill="#86efac" opacity="0.8"/>
+
+  <!-- ══════════════ DOOR GAPS ════════════════════════════════════════ -->
+  <!-- CEO top/bottom door -->
+  <rect x="111" y="9" width="26" height="6" fill="#d2bc90"/>
+  <rect x="111" y="187" width="26" height="6" fill="#d2bc90"/>
+  <!-- CEO left/right door -->
+  <rect x="8" y="92" width="6" height="26" fill="#d2bc90"/>
+  <rect x="246" y="92" width="6" height="26" fill="#d2bc90"/>
+  <!-- Meeting top/bottom -->
+  <rect x="393" y="9" width="26" height="6" fill="#d2bc90"/>
+  <rect x="393" y="187" width="26" height="6" fill="#d2bc90"/>
+  <!-- Meeting left/right -->
+  <rect x="270" y="92" width="6" height="26" fill="#d2bc90"/>
+  <rect x="548" y="92" width="6" height="26" fill="#d2bc90"/>
+  <!-- Dev top/bottom -->
+  <rect x="706" y="9" width="26" height="6" fill="#d2bc90"/>
+  <rect x="706" y="187" width="26" height="6" fill="#d2bc90"/>
+  <!-- Dev left/right -->
+  <rect x="572" y="92" width="6" height="26" fill="#d2bc90"/>
+  <rect x="886" y="92" width="6" height="26" fill="#d2bc90"/>
+  <!-- Marketing top/bottom -->
+  <rect x="111" y="211" width="26" height="6" fill="#d2bc90"/>
+  <rect x="111" y="389" width="26" height="6" fill="#d2bc90"/>
+  <!-- Marketing left/right -->
+  <rect x="8" y="294" width="6" height="26" fill="#d2bc90"/>
+  <rect x="246" y="294" width="6" height="26" fill="#d2bc90"/>
+  <!-- Finance top/bottom -->
+  <rect x="383" y="211" width="26" height="6" fill="#d2bc90"/>
+  <rect x="383" y="389" width="26" height="6" fill="#d2bc90"/>
+  <!-- Finance left/right -->
+  <rect x="270" y="294" width="6" height="26" fill="#d2bc90"/>
+  <rect x="548" y="294" width="6" height="26" fill="#d2bc90"/>
+  <!-- Lounge top/bottom -->
+  <rect x="706" y="211" width="26" height="6" fill="#d2bc90"/>
+  <rect x="706" y="389" width="26" height="6" fill="#d2bc90"/>
+  <!-- Lounge left/right -->
+  <rect x="572" y="294" width="6" height="26" fill="#d2bc90"/>
+  <rect x="886" y="294" width="6" height="26" fill="#d2bc90"/>
+  <!-- Support top/bottom -->
+  <rect x="111" y="413" width="26" height="6" fill="#d2bc90"/>
+  <rect x="111" y="562" width="26" height="6" fill="#d2bc90"/>
+  <!-- Support left/right -->
+  <rect x="8" y="476" width="6" height="26" fill="#d2bc90"/>
+  <rect x="246" y="476" width="6" height="26" fill="#d2bc90"/>
+  <!-- HR top/bottom -->
+  <rect x="383" y="413" width="26" height="6" fill="#d2bc90"/>
+  <rect x="383" y="562" width="26" height="6" fill="#d2bc90"/>
+  <!-- HR left/right -->
+  <rect x="270" y="476" width="6" height="26" fill="#d2bc90"/>
+  <rect x="548" y="476" width="6" height="26" fill="#d2bc90"/>
+  <!-- Command top/bottom -->
+  <rect x="695" y="413" width="26" height="6" fill="#d2bc90"/>
+  <rect x="695" y="562" width="26" height="6" fill="#d2bc90"/>
+  <!-- Command left/right -->
+  <rect x="572" y="476" width="6" height="26" fill="#d2bc90"/>
+  <rect x="886" y="476" width="6" height="26" fill="#d2bc90"/>
+
+  <!-- ══════════════ CORRIDOR PLANTS ══════════════════════════════════ -->
+  <!-- V-corridor 1 -->
+  <rect x="252" y="196" width="18" height="7" fill="#166534" rx="1"/>
+  <ellipse cx="261" cy="194" rx="11" ry="6" fill="#4ade80" opacity="0.82"/>
+  <rect x="252" y="398" width="18" height="7" fill="#166534" rx="1"/>
+  <ellipse cx="261" cy="396" rx="11" ry="6" fill="#4ade80" opacity="0.82"/>
+  <!-- V-corridor 2 -->
+  <rect x="554" y="196" width="18" height="7" fill="#166534" rx="1"/>
+  <ellipse cx="563" cy="194" rx="11" ry="6" fill="#4ade80" opacity="0.82"/>
+  <rect x="554" y="398" width="18" height="7" fill="#166534" rx="1"/>
+  <ellipse cx="563" cy="396" rx="11" ry="6" fill="#4ade80" opacity="0.82"/>
+  <!-- H-corridor 1 left -->
+  <rect x="22" y="196" width="54" height="10" fill="#166534" rx="1"/>
+  <ellipse cx="49" cy="195" rx="26" ry="6" fill="#4ade80" opacity="0.75"/>
+  <!-- H-corridor 1 center -->
+  <rect x="296" y="196" width="54" height="10" fill="#166534" rx="1"/>
+  <ellipse cx="323" cy="195" rx="26" ry="6" fill="#4ade80" opacity="0.75"/>
+  <!-- H-corridor 1 right -->
+  <rect x="622" y="196" width="54" height="10" fill="#166534" rx="1"/>
+  <ellipse cx="649" cy="195" rx="26" ry="6" fill="#4ade80" opacity="0.75"/>
+  <!-- H-corridor 2 left -->
+  <rect x="22" y="398" width="54" height="10" fill="#166534" rx="1"/>
+  <ellipse cx="49" cy="397" rx="26" ry="6" fill="#4ade80" opacity="0.75"/>
+  <!-- H-corridor 2 center -->
+  <rect x="296" y="398" width="54" height="10" fill="#166534" rx="1"/>
+  <ellipse cx="323" cy="397" rx="26" ry="6" fill="#4ade80" opacity="0.75"/>
+  <!-- H-corridor 2 right -->
+  <rect x="622" y="398" width="54" height="10" fill="#166534" rx="1"/>
+  <ellipse cx="649" cy="397" rx="26" ry="6" fill="#4ade80" opacity="0.75"/>
+
+  <!-- ══════════════ WALL EDGE VIGNETTE ══════════════════════════════ -->
+  <rect x="0" y="0" width="900" height="16" fill="url(#wallEdgeTop)" pointer-events="none"/>
+  <rect x="0" y="564" width="900" height="16" fill="url(#wallEdgeBot)" pointer-events="none"/>
+  <rect x="0" y="0" width="16" height="580" fill="url(#wallEdgeL)" pointer-events="none"/>
+  <rect x="884" y="0" width="16" height="580" fill="url(#wallEdgeR)" pointer-events="none"/>
+</svg>
