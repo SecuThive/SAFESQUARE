@@ -1,6 +1,6 @@
 {
   "name": "safesquare-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SafeSquare 데스크톱 클라이언트 (Electron thin client)",
   "main": "main.js",
   "author": "SecuThive",

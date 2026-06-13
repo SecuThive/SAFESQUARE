@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 // ----- 설정(서버 주소) 영속화 -----
-const DEFAULT_URL = 'http://thive.iptime.org:4000';
+const DEFAULT_URL = 'http://thive.iptime.org';
 const configPath = () => path.join(app.getPath('userData'), 'config.json');
 
 function loadConfig() {
@@ -26,12 +26,12 @@ let mainWindow = null;
 let config = { serverUrl: DEFAULT_URL };
 
 function loadServer() {
-  if (!mainWindow) return;
+  if (!mainWindow || mainWindow.isDestroyed()) return;
   mainWindow.loadURL(config.serverUrl).catch(() => showErrorPage());
 }
 
 function showErrorPage() {
-  if (!mainWindow) return;
+  if (!mainWindow || mainWindow.isDestroyed()) return;
   const html = `
     <html lang="ko"><head><meta charset="utf-8"/>
     <style>
